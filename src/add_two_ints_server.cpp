@@ -1,3 +1,6 @@
+#include <memory>
+#include <functional>
+
 #include "rclcpp/rclcpp.hpp"
 #include "example_interfaces/srv/add_two_ints.hpp"
 
@@ -34,10 +37,11 @@ private:
   rclcpp::Service<example_interfaces::srv::AddTwoInts>::SharedPtr service_;
 };
 
-int main(int argc, char **argv)
+int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<AddTwoIntsServer>());
   rclcpp::shutdown();
   return 0;
 }
+

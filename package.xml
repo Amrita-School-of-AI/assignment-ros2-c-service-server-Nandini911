@@ -1,28 +1,20 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
 
   <name>ros2_service_server</name>
   <version>0.0.0</version>
-  <description>ROS2 C++ service server that adds two integers</description>
+  <description>ROS2 C++ Add Two Ints Service Server</description>
 
   <maintainer email="nandinibikkina@gmail.com">nandini</maintainer>
   <license>Apache-2.0</license>
 
-  <!-- Build system -->
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <!-- Build dependencies -->
   <build_depend>rclcpp</build_depend>
   <build_depend>example_interfaces</build_depend>
 
-  <!-- Runtime dependencies -->
   <exec_depend>rclcpp</exec_depend>
   <exec_depend>example_interfaces</exec_depend>
-
-  <!-- Testing -->
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
